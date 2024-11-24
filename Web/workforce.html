@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Workforce - XYZ Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meet the Workforce</h1>
+        <p>Our team of talented professionals makes it all possible.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="workforce.html">Meet the Workforce</a>
+            <a href="projects.html">Our Projects</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="card-container">
+        <div class="card" onclick="showModal('Jane Cooper', 'Senior Developer', 'Jane specializes in full-stack development and has been with XYZ for over 5 years.')">
+            <img src="https://images.pexels.com/photos/3184308/pexels-photo-3184308.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Jane Cooper">
+            <h3>Jane Cooper</h3>
+            <p>Senior Developer</p>
+        </div>
+        <div class="card" onclick="showModal('Mark Davis', 'Project Manager', 'Mark leads multiple projects with a focus on client satisfaction and on-time delivery.')">
+            <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Mark Davis">
+            <h3>Mark Davis</h3>
+            <p>Project Manager</p>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal()">&times;</span>
+            <h2 id="modalName"></h2>
+            <h4 id="modalTitle"></h4>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 XYZ Technologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showModal(name, title, description) {
+            document.getElementById('modalName').textContent = name;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function hideModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

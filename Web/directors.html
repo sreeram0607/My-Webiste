@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Directors - XYZ Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meet the Directors</h1>
+        <p>Leading the way to success.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="workforce.html">Meet the Workforce</a>
+            <a href="projects.html">Our Projects</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="card-container">
+        <div class="card" onclick="showModal('Jane Smith', 'CTO', 'Jane is a visionary leader with expertise in software architecture and cybersecurity.')">
+            <img src="https://via.placeholder.com/250x250" alt="Director Image">
+            <h3>Jane Smith</h3>
+            <p>CTO</p>
+        </div>
+        <div class="card" onclick="showModal('John Doe', 'CEO', 'John is the founder and CEO of XYZ Technologies, with a wealth of experience in tech innovation.')">
+            <img src="https://via.placeholder.com/250x250" alt="Director Image">
+            <h3>John Doe</h3>
+            <p>CEO</p>
+        </div>
+        <!-- Add more director cards here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 XYZ Technologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showModal(name, title, description) {
+            document.getElementById('modalName').textContent = name;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function hideModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

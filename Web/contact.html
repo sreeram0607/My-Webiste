@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - XYZ Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="meet-directors.html">Meet the Directors</a>
+            <a href="meet-workforce.html">Meet the Workforce</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="contact-section">
+        <h2>Get In Touch</h2>
+        <p>We would love to hear from you. Please fill out the form below and we'll get back to you as soon as possible!</p>
+
+        <div id="contact-form-container">
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 XYZ Technologies. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Popup (Hidden by default) -->
+    <div id="director-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Director Profile</h2>
+            <p>More information about the director will be displayed here.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
